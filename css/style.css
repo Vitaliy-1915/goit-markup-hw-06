@@ -938,6 +938,7 @@ img {
   margin-bottom: 20px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .modal-form-textarea::placeholder {
@@ -951,7 +952,6 @@ img {
 
 .modal-form-textarea:focus {
   border-color: var(--active-link-color);
-  outline: nane;
 }
 
 .modal-form-checkbox-text::before {
