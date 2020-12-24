@@ -951,6 +951,7 @@ img {
 
 .modal-form-textarea:focus {
   border-color: var(--active-link-color);
+  outline: nane;
 }
 
 .modal-form-checkbox-text::before {
