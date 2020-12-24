@@ -84,7 +84,7 @@
       <!--принципы работы студии-->
       <section class="principles">
         <div class="conteiner">
-          <h2 hidden>Наши принципы</h2>
+          <h2 class="visually-hidden">Наши принципы</h2>
           <ul class="principles-list">
             <div class="principles-list-icon-wrapper">
               <svg class="principles-list-icon">
@@ -450,11 +450,11 @@
     </main>
     <!--подвал-->
     <footer class="footer">
-      <!--кондактная инфо-->
+      <!--контактная инфо-->
       <section class="footer-contact">
         <div class="conteiner">
           <address class="footer-address">
-            <h2 hidden>контакты</h2>
+            <h2 class="visually-hidden">контакты</h2>
             <div class="footer-address-list-wrapper">
               <a class="logo" href="./index.html"
                 >Web<span class="footer-hf-logo">Studio</span></a
@@ -536,6 +536,9 @@
               />
               <button class="footer-form-button" type="submit">
                 Подписаться
+                <svg class="footer-icon-button">
+                  <use href="./sprite.svg#icon-send"></use>
+                </svg>
               </button>
             </div>
           </form>
@@ -550,6 +553,60 @@
             <use href="./sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <b class="modal-form-appeal"
+            >Оставьте свои данные, мы вам перезвоним</b
+          >
+          <label class="modal-form-label">
+            Имя
+            <span class="form-icon-wrapper">
+              <input type="text" name="user-name" class="modal-form-input" />
+              <svg class="form-icon">
+                <use href="./sprite.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Телефон
+            <span class="form-icon-wrapper">
+              <input type="tel" name="user-tel" class="modal-form-input" />
+              <svg class="form-icon">
+                <use href="./sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Почта
+            <span class="form-icon-wrapper">
+              <input type="email" name="user-email" class="modal-form-input" />
+              <svg class="form-icon">
+                <use href="./sprite.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Комментарий
+            <textarea
+              class="modal-form-textarea"
+              placeholder="Введите текст"
+              name="user-comments"
+            ></textarea>
+          </label>
+          <input
+            id="checkbox-text"
+            type="checkbox"
+            name="user-policy"
+            class="modal-form-checkbox visually-hidden"
+            value="accept-policy"
+          />
+          <label for="checkbox-text" class="modal-form-checkbox-text"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="modal-form-checkbox-text-link"
+              >Условия договора</a
+            >
+          </label>
+          <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
 
